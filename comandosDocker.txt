@@ -1,0 +1,7 @@
+To build -> docker build -t <hub-user>/<repo-name>[:<tag>]
+
+To re-tag -> docker tag <existing-image> <hub-user>/<repo-name>[:<tag>]
+
+To commit -> docker commit <existing-container> <hub-user>/<repo-name>[:<tag>]
+
+To push -> docker push <hub-user>/<repo-name>:<tag>
