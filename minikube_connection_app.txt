@@ -1,0 +1,9 @@
+minikube start
+
+kubectl create deployment webApp --image="Url de la imagen subida a docker hub"
+
+kubectl expose deployment webApp --type="NodePort" --port 8080
+
+minikube ip 					#Para saber a que dirección privada acceder
+
+kubectl describe services		#Miramos NodePort para saber en que puesto esta corriendo
