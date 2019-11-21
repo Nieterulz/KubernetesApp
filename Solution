@@ -1,0 +1,17 @@
+1- We modify the Docker
+
+2- We create the Dockerfile image with the folder which is the appweb
+
+3- Next, we make a push to the repository we have created in Docker Hub
+
+4- Kubernetes:
+
+	1- minikube start
+	
+	2- kubectl create deployment <name_you_want> --image=<username>/<repository>
+
+	3- kubectl expose deployment appweb --type="NodePort" --port <Port_you_execute_appweb>
+	
+	4- kubectl exec -it <POD_ID> bash
+
+		4.5- (to see the ID we do: kubectl get pods)
