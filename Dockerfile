@@ -10,4 +10,4 @@ RUN apt-get install python3-dev -y && apt-get install python-dev default-libmysq
 
 RUN apt install mariadb-client -y && pip3 install mysqlclient
 
-CMD pyhon3 
+CMD pyhon3 /web_project/manage.py runserver 0.0.0.0:4000
